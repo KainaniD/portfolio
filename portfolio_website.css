@@ -197,9 +197,6 @@ body {
 .page-content {
     color: #FFF;
     font-size: 15px;
-}
-
-.home {
     position: absolute;
     right: calc(var(--pad)*2);
     bottom: calc(var(--pad)*2);
@@ -210,11 +207,16 @@ body {
     line-height: 1.5;
 }
 
-.contact {
-    position: absolute;
-    right: calc(var(--pad)*2);
-    bottom: calc(var(--pad)*2);
-    white-space: nowrap;
+.project-header {
+    font-size: 30px;
+}
+
+.project-subheader {
+    font-size: 15px;
+}
+
+.project-link {
+    margin-top: 10px;
 }
 
 .link {
