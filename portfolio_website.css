@@ -191,7 +191,7 @@ body {
 .page {
     display: none;
     width: 100%;
-    min-height: calc(var(--vh, 1vh)*100);
+    min-height: calc(var(1vh, 1vh)*100);
 }
 
 .page-content {
