@@ -19,35 +19,34 @@ code {
 }
 
 #light {
-  transition: all 1s linear;
+  transition: all 1s ease;
   background-color: #FCC88F;
 }
 
 #dark {
-  transition: all 1s linear;
+  transition: all 1s ease;
   background-color: #5968C1;
 }
 
-@keyframes slideRight {
-  from { left: -150%; }
-  to { left: 50%; }
+@keyframes pop-in {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.pop-in {
+  animation:pop-in 0.5s;
 }
 
 #dark .mode-toggle {
-  transition: all 1s linear;
   content:url("./assets/MOON.png");
 }
 #light .mode-toggle {
-  transition: all 1s linear;
   content:url("./assets/SUN.png");
 }
 
-.mode-toggle {
-  transition: all 1s linear;
-}
-
 .navbar {
-  transition: all 1s linear;
+  transition: all 0.5s ease;
 }
 
 @layer base {
