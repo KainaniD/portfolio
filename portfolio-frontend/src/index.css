@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 body {
+  scroll-behavior: smooth;
   margin: 0;
   font-family: "Spline Sans Mono", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -18,24 +19,34 @@ code {
     monospace;
 }
 
+.navbar {
+  transition: all 0.5s ease;
+}
+
 #light {
   transition: all 1s ease;
   background-color: #FCC88F;
+  /* background-color: #FFF; */
 }
 
 #dark {
   transition: all 1s ease;
-  background-color: #5968C1;
+  background-color: #10193C;
+  /* background-color: #000; */
 }
 
 @keyframes pop-in {
-  0% { transform: scale(0.8); }
+  0% { transform: scale(0.8); opacity: 0; transform: translateY(50%);}
   50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+  100% { transform: scale(1); opacity: 1; transform: translateY(0%);}
 }
 
 .pop-in {
   animation:pop-in 0.5s;
+}
+
+#toggle {
+  min-width: 150px;
 }
 
 #dark .mode-toggle {
@@ -44,9 +55,11 @@ code {
 #light .mode-toggle {
   content:url("./assets/SUN.png");
 }
-
-.navbar {
-  transition: all 0.5s ease;
+#dark #currentMode:after {
+  content: "dark theme";
+}
+#light #currentMode:after {
+  content: "light theme";
 }
 
 @layer base {
@@ -59,5 +72,8 @@ code {
   #dark .mode-toggle {;
   }
   #light .mode-toggle {
+  }
+  .page {
+    @apply h-dvh;
   }
 }
