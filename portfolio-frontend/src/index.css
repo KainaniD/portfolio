@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Spline Sans Mono", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#light {
+  transition: all 1s linear;
+  background-color: #FCC88F;
+}
+
+#dark {
+  transition: all 1s linear;
+  background-color: #5968C1;
+}
+
+@keyframes slideRight {
+  from { left: -150%; }
+  to { left: 50%; }
+}
+
+#dark .mode-toggle {
+  transition: all 1s linear;
+  content:url("./assets/MOON.png");
+}
+#light .mode-toggle {
+  transition: all 1s linear;
+  content:url("./assets/SUN.png");
+}
+
+.mode-toggle {
+  transition: all 1s linear;
+}
+
+.navbar {
+  transition: all 1s linear;
+}
+
+@layer base {
+  #dark .navbar {
+    @apply text-white;
+  }
+  #light .navbar {
+    @apply text-black;
+  }
+  #dark .mode-toggle {;
+  }
+  #light .mode-toggle {
+  }
+}
