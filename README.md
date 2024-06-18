@@ -1,0 +1,1 @@
+Hello! Welcome to my portfolio website, hit the sun/moon icon to swap between light and dark mode. Feel free to contact me anytime!
