@@ -1,7 +1,7 @@
 function Landing(props) {
   return (
-    <div className="page grid grid-cols-2 md:grid-cols-3 gap-4">
-      <div>
+    <div id="pageLanding" className="page grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="pb-10">
         <h2>Hi there!</h2>
         <br />
         <h2>I'm Kai, <br /> a full-stack devloper and computational linguist</h2>

@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 body {
-  scroll-behavior: smooth;
   margin: 0;
   font-family: "Spline Sans Mono", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -20,6 +19,7 @@ code {
 }
 
 html {
+  scroll-behavior: smooth;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -28,7 +28,7 @@ html {
   scroll-snap-align: start;
 }
 
-.navbar {
+.header {
   transition: all 0.5s ease;
 }
 
@@ -44,15 +44,25 @@ html {
   /* background-color: #000; */
 }
 
-#light .navbar {
-  transition: all 1s ease;
+#light .header {
   background-color: #FCC88F;
   box-shadow: 0px 0px 40px 40px #FCC88F; 
 }
-#dark .navbar {
-  transition: all 1s ease;
+#dark .header {
   background-color: #10193C;
   box-shadow: 0px 0px 40px 40px #10193C;
+}
+
+.header {
+  transition: all 1s ease;
+}
+
+.navbar {
+  transition: all 1s ease;
+}
+
+.navbar a{
+  transition: all 0.2s ease;
 }
 
 @keyframes pop-in {

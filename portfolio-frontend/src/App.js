@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import Header from "./Header";
 import Navbar from "./Navbar";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
@@ -29,6 +30,7 @@ function App() {
 
   <ThemeContext.Provider value = {{theme, toggleTheme}}>
       <div id={theme} className="w-full h-full my-0 mx-0 p-4 main">
+        <Header />
         <Navbar />
         <Landing toggle={toggleTheme}/>
         <About />
