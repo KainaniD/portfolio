@@ -4,7 +4,7 @@ function Landing(props) {
       <div className="pb-10">
         <h2>Hi there!</h2>
         <br />
-        <h2>I'm Kai, <br /> a full-stack devloper and computational linguist</h2>
+        <h2>I'm Kai, <br /> a full-stack devloper and computational linguist based in Los Angeles</h2>
       </div>
       <div className="py-10">
         <h3 id="toggleText" className="text-center">Click below!</h3>

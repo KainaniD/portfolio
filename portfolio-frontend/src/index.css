@@ -92,6 +92,9 @@ html {
   content: "light theme";
 }
 
+#pageContact a {
+  transition: all 0.2s ease;
+}
 
 @layer base {
   #dark * {
@@ -106,6 +109,9 @@ html {
   }
   .page {
     @apply h-dvh pt-40;
+  }
+  #pageContact a {
+    @apply hover:text-2xl
   }
   h2 {
     @apply text-xl md:text-2xl lg:text-4xl;
