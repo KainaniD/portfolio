@@ -25,7 +25,7 @@ function App() {
   return (
 
   <ThemeContext.Provider value = {{theme, toggleTheme}}>
-      <div id={theme} className="w-full h-full my-0 mx-0">
+      <div id={theme} className="w-full h-full my-0 mx-0 p-4">
         <Navbar />
         <Landing toggle={toggleTheme}/>
         <About />

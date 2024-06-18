@@ -35,6 +35,17 @@ code {
   /* background-color: #000; */
 }
 
+#light .navbar {
+  transition: all 1s ease;
+  background-color: #FCC88F;
+  box-shadow: 0px 0px 60px 50px #FCC88F;
+}
+#dark .navbar {
+  transition: all 1s ease;
+  background-color: #10193C;
+  box-shadow: 0px 0px 60px 50px #10193C;
+}
+
 @keyframes pop-in {
   0% { transform: scale(0.8); opacity: 0; transform: translateY(50%);}
   50% { transform: scale(1.1); }
@@ -63,10 +74,10 @@ code {
 }
 
 @layer base {
-  #dark .navbar {
+  #dark * {
     @apply text-white;
   }
-  #light .navbar {
+  #light * {
     @apply text-black;
   }
   #dark .mode-toggle {;
