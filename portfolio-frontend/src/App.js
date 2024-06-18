@@ -1,10 +1,10 @@
 import { createContext, useState } from "react";
-import Header from "./Header";
-import Navbar from "./Navbar";
+import Header from "./page-elements/Header";
+import Navbar from "./page-elements/Navbar";
 import Landing from "./pages/Landing";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 export const ThemeContext = createContext(null);
 

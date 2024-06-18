@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Contact() {
     return (
         <div id="pageContact" className="page flex flex-col gap-6">
-            <h2>Contact Me!</h2>
-            <a href="https://www.linkedin.com/in/kainani-dowell-087128264/" target="_blank" className="text-xl">
+            <h1 className="font-bold">Contact Me!</h1>
+            <a href="https://www.linkedin.com/in/kainani-dowell-087128264/" target="_blank" className="text-3xl">
                 <FontAwesomeIcon className="icon" icon={faLinkedin} /> Linkedin
             </a>
-            <a href="mailto:kainanidowell@gmail.com" target="_blank" className="text-xl">
-                <FontAwesomeIcon className="icon" icon={faEnvelope} /> Email
+            <a href="mailto:kainanidowell@gmail.com" target="_blank" className="text-3xl">
+                <FontAwesomeIcon className="icon" icon={faEnvelope} /> Email Me
             </a>
-            <a href="https://github.com/KainaniD" target="_blank" className="text-xl">
+            <a href="https://github.com/KainaniD" target="_blank" className="text-3xl">
                 <FontAwesomeIcon className="icon" icon={faGithub} /> Github
             </a>
         </div>

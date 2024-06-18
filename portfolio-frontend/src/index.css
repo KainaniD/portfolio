@@ -32,6 +32,15 @@ html {
   transition: all 0.5s ease;
 }
 
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 #light {
   transition: all 1s ease;
   background-color: #FCC88F;
@@ -92,6 +101,14 @@ html {
   content: "light theme";
 }
 
+#dark #pageProjects .project-tile {
+  background-color: #101D4F;
+}
+
+#light #pageProjects .project-tile {
+  background-color: #FFBF78;
+}
+
 #pageContact a {
   transition: all 0.2s ease;
 }
@@ -108,10 +125,16 @@ html {
   #light .mode-toggle {
   }
   .page {
-    @apply h-dvh pt-40;
+    @apply h-dvh pt-40 pb-10 snap-center;
   }
   #pageContact a {
-    @apply hover:text-2xl
+    @apply hover:text-4xl
+  }
+  .project-tile {
+    @apply hover:shadow-xl transition-all;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
   }
   h2 {
     @apply text-xl md:text-2xl lg:text-4xl;
