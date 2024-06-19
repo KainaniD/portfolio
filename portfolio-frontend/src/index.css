@@ -101,12 +101,20 @@ html {
   content: "light theme";
 }
 
-#dark #pageProjects .project-tile {
-  background-color: #101D4F;
+#dark .clickable {
+  background-color: #1C295C;
 }
 
-#light #pageProjects .project-tile {
-  background-color: #FFBF78;
+#dark .clickable:hover {
+  background-color: #10193C;
+}
+
+#light .clickable {
+  background-color: #FCBD77;
+}
+
+#light .clickable:hover {
+  background-color: #FCC88F;
 }
 
 #pageContact a {
@@ -120,18 +128,15 @@ html {
   #light * {
     @apply text-black;
   }
-  #dark .mode-toggle {;
+  #dark .mode-toggle {
   }
   #light .mode-toggle {
   }
   .page {
     @apply h-dvh pt-40 pb-10 snap-center;
   }
-  #pageContact a {
-    @apply hover:text-4xl
-  }
-  .project-tile {
-    @apply hover:shadow-xl transition-all;
+  .clickable {
+    @apply border-2 border-b-4 border-black rounded-2xl p-4
   }
   h1 {
     @apply text-3xl md:text-4xl lg:text-5xl;

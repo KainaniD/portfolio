@@ -10,7 +10,7 @@ function Landing(props) {
       </div>
       <div className="flex flex-col justify-between py-10">
         <div>
-        <h3 id="toggleText" className="text-center mb-4">Click below!</h3>
+        <h3 id="toggleText" className="text-center mb-4">Click me!</h3>
         <img id="toggle" className="mode-toggle mx-auto aspect-square" onClick={props.toggle}></img>
         </div>
         <div>
