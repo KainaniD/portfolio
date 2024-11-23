@@ -12,19 +12,10 @@ export const ThemeContext = createContext(null);
 function App() {
 
   const [theme, setTheme] = useState("light");
-  const [animationPlaying, setAnimationPlaying] = useState(false);
 
   const toggleTheme = () => {
-    if (animationPlaying === false){
       document.getElementById("toggleText").classList.add("hidden");
-      setAnimationPlaying(true);
       setTheme((curr) => (curr === "light" ? "dark" : "light"));
-      document.getElementById("toggle").classList.add("pop-in");
-      setTimeout(()=>{
-      document.getElementById("toggle").classList.remove("pop-in");
-      setAnimationPlaying(false);
-      }, 500);
-    }
   }
 
   return (

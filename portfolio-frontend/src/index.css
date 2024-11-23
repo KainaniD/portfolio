@@ -75,9 +75,6 @@ html {
   box-shadow: 0px 0px 40px 40px #10193C;
 }
 
-.header {
-  transition: all 1s ease;
-}
 
 .navbar {
   transition: all 1s ease;
@@ -85,16 +82,6 @@ html {
 
 .navbar a{
   transition: all 0.2s ease;
-}
-
-@keyframes pop-in {
-  0% { transform: scale(0.8); opacity: 0; transform: translateY(50%);}
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); opacity: 1; transform: translateY(0%);}
-}
-
-.pop-in {
-  animation:pop-in 0.5s;
 }
 
 #toggle {
