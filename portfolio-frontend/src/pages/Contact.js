@@ -1,4 +1,4 @@
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -15,6 +15,9 @@ function Contact() {
             </a>
             <a href="https://github.com/KainaniD" target="_blank" className="clickable float-left text-3xl">
                 <FontAwesomeIcon className="icon" icon={faGithub} /> Github
+            </a>
+            <a href="https://www.youtube.com/@CodewKai" target="_blank" className="clickable float-left text-3xl">
+                <FontAwesomeIcon className="icon" icon={faYoutube} /> Youtube
             </a>
             </div>
         </div>

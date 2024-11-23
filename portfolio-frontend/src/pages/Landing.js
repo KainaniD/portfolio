@@ -15,7 +15,7 @@ function Landing(props) {
         </div>
         <div>
         <h3 className="text-center">scroll</h3>
-        <h2 className="text-center justify-self-end"><FontAwesomeIcon icon={faChevronDown} /></h2>
+        <h2 className="text-center justify-self-center"><FontAwesomeIcon icon={faChevronDown} /></h2>
         </div>
       </div>
     </div>
