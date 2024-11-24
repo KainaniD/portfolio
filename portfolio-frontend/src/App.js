@@ -27,7 +27,7 @@ function App() {
         <Footer />
         <Landing toggle={toggleTheme}/>
         <About />
-        {/* <Projects /> */}
+        <Projects />
         <Contact />
       </div>
     </ThemeContext.Provider>

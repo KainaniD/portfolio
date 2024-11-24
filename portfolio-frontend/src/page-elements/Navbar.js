@@ -4,7 +4,7 @@ function Navbar() {
             <h2 className="font-bold">Navigation</h2>
             <a href="#pageLanding" className="text-2xl hover:tracking-widest">Home</a>
             <a href="#pageAbout" className="text-2xl hover:tracking-widest">About</a>
-            {/* <a href="#pageProjects" className="text-2xl hover:tracking-widest">Projects</a> */}
+            <a href="#pageProjects" className="text-2xl hover:tracking-widest">Projects</a>
             <a href="#pageContact" className="text-2xl hover:tracking-widest">Contact</a>
       </div>
     );

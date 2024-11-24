@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Contact() {
     return (
-        <div id="pageContact" className="page">
+        <div id="pageContact" className="page no-scrollbar">
             <div className="flex flex-col float-left gap-6">
             <h1 className="font-bold">Contact Me!</h1>
             <a href="https://www.linkedin.com/in/kainani-dowell-087128264/" target="_blank" className="clickable float-left text-3xl">

@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 function Landing(props) {
   return (
-    <div id="pageLanding" className="page grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div id="pageLanding" className="page no-scrollbar grid grid-cols-2 md:grid-cols-3 gap-4">
       <div className="pb-10">
         <h1 className="mb-4 font-bold">Hi there!</h1>
-        <h2>I'm Kai, <br /> a full-stack devloper and computational linguist based in Los Angeles</h2>
+        <h2 className="mb-4">I'm Kai, <br /> a full-stack devloper and computational linguist based in Los Angeles</h2>
+        <span id="toggleText">Click on the Sun to the right to change the theme of this website!</span>
       </div>
       <div className="flex flex-col justify-between py-10">
         <div className="mx-auto ">
-        <h3 id="toggleText" className="text-center mb-12">Click me!</h3>
         <motion.div 
             whileHover={{scale: 1.2}} 
             whileTap={{scale: 0.9}}
